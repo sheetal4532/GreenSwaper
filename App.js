@@ -9,6 +9,10 @@ import OTP from './src/Screens/OTP';
 import SellerBusinessOption from './src/Screens/SellerBusinessOption';
 import Home from './src/Screens/Home';
 import Business from './src/Screens/Business';
+import Buyer from './src/Screens/Buyer';
+import Paper from './src/Screens/Paper';
+import Payment from './src/Screens/Payment';
+import Subscription from './src/Screens/Subscription';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +21,7 @@ const App = () => {
    <NavigationContainer>
       <Stack.Navigator
          // initialRouteName="Splash"
-         initialRouteName="Splash" //Splash Screen 
+         initialRouteName="Home" //Splash Screen 
          screenOptions={{
             headerShown: false,
          }}>
@@ -28,6 +32,10 @@ const App = () => {
           <Stack.Screen name="SellerBusinessOption" component={SellerBusinessOption} />
           <Stack.Screen name="Business" component={Business} />
           <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Buyer" component={Buyer} />
+          <Stack.Screen name="Paper" component={Paper} />
+          <Stack.Screen name="Subscription" component={Subscription} />
+          <Stack.Screen name="Payment" component={Payment} />
       </Stack.Navigator>
    </NavigationContainer>
   )

@@ -4,33 +4,56 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
+    "@react-native-camera-roll/camera-roll": "^7.10.1",
+    "@react-native-community/datetimepicker": "^8.4.3",
+    "@react-native-picker/picker": "2.11.1",
     "@react-navigation/bottom-tabs": "^7.4.4",
     "@react-navigation/native": "^7.1.16",
     "@react-navigation/native-stack": "^7.3.23",
     "expo": "~53.0.20",
+    "expo-av": "~15.1.7",
+    "expo-image-picker": "~16.1.4",
+    "expo-linear-gradient": "~14.1.5",
     "expo-router": "^5.1.4",
     "expo-status-bar": "~2.2.3",
+    "lottie-react-native": "7.2.2",
     "lucide-react-native": "^0.534.0",
     "react": "19.0.0",
     "react-native": "0.79.5",
+    "react-native-collapsible": "^1.6.2",
     "react-native-curved-bottom-bar": "^3.5.1",
     "react-native-gesture-handler": "~2.24.0",
+    "react-native-image-picker": "^8.2.1",
+    "react-native-modal": "^14.0.0-rc.1",
+    "react-native-paper": "^5.14.5",
+    "react-native-qrcode-svg": "^6.3.15",
     "react-native-reanimated": "~3.17.4",
-    "react-native-safe-area-context": "^5.4.0",
+    "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.11.1",
     "react-native-svg": "15.11.2",
     "react-native-vector-icons": "^10.3.0",
-    "react-router": "^7.7.1",
-    "expo-image-picker": "~16.1.4"
+    "react-native-video": "^6.16.1",
+    "react-router": "^7.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
+  },
+  "expo": {
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow access to your photos",
+          "cameraPermission": "Allow access to your camera"
+        }
+      ]
+    ]
   },
   "private": true
 }
